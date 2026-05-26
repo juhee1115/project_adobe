@@ -1,0 +1,84 @@
+@import url(reset.css);
+@import url(home.css);
+@import url(plan.css);
+@import url(subpage1.css);
+
+/* 스타일 가이드 */
+:root {
+  /* Color styles */
+  --point: rgba(134, 104, 226, 1);
+  /* black */
+  --sub-color-1: rgba(0, 0, 0, 1);
+  /* white */
+  --sub-color-2: rgba(250, 250, 250, 1);
+
+  /* Text-size styles */
+  /* pc */
+  --p-c1920px---menu: 20px;
+  --p-c1920px---sub--menu: 18px;
+  --p-c1920px---visual-title: 70px;
+  --p-c1920px---contents-title: 45px;
+  --p-c1920px---contents--desc: 20px;
+  --p-c1920px---card-title: 25px;
+  --p-c1920px---card--desc: 20px;
+  --p-c1920px--button: 25px;
+  /* tablet */
+  --tablet780px---visual-title--m: 50px;
+  --tablet780px---visual--desc--m: 25px;
+  --tablet780px---sub-title--m: 25px;
+  --tablet780px---contents--title--m: 45px;
+  --tablet780px---contents--desc--m: 20px;
+  --tablet780px---card-title--m: 20px;
+  --tablet780px---card--desc--m: 13px;
+  --tablet780px---sub--content-title--m: 30px;
+  --tablet780px--button--m: 20px;
+  /* mobile */
+  --mobile390px---visual-title--s: 26px;
+  --mobile390px---desc--s: 16px;
+  --mobile390px---sub--title--s: 18px;
+  --mobile390px--button--s: 16px;
+  --mobile390px---card--desc--s: 13px;
+  --mobile390px---card-title--s: 18px;
+  --mobile390px---contents-title--s: 26px;
+
+  /* font-weight */
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+
+/* 공통영역 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 비주얼 영역 타이틀 */
+.visual-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--fw-bold);
+}
+/* 비주얼 영역 설명 */
+.visual-desc {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--fw-regular);
+}
+/* 콘텐츠 영역 타이틀 */
+.contents-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--fw-bold);
+}
+/* 콘텐츠 영역 설명 */
+.contents-des {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--fw-regular);
+}
+/* 카드 영역 타이틀 */
+.card-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--fw-bold);
+}
+/* 카드 영역 설명 */
+.card-des {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: var(--fw-regular);
+}
+

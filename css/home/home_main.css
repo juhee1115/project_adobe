@@ -1,0 +1,182 @@
+body{
+  overflow-x: hidden;
+}
+.rainbow-bg {
+  width: 100%;
+  background-image: url("/asset/mainpage/rainbow-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+  z-index: 2;
+  transform: translateY(-150px);
+  margin-bottom: -150px;
+  padding: 0 100px;
+}
+
+/* 가로 flex 배치 */
+.content1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  padding: 220px 0 120px;
+  flex-wrap: wrap;
+}
+
+/* 왼쪽 텍스트 */
+.content-text {
+  flex-shrink: 0;
+}
+
+.content-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.content-text p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 100px;
+}
+
+.button-purple {
+  display: inline-block;
+  background-color: var(--point);
+  color: #ffffff;
+  padding: 9px 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+/* 카드 그리드 */
+.tool-list {
+  min-width: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  
+}
+
+/* 카드 */
+
+.sol-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 230px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tool-list .sol-card:hover {
+  transform: translateY(-4px) scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+.sol-card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+.sol-card p {
+  font-size: 18px;
+  line-height: 24px;
+}
+/* 카드 기울임 */
+.sol-card:nth-child(1) { transform: rotate(-6deg); }
+.sol-card:nth-child(2) { transform: rotate(2deg); }
+.sol-card:nth-child(3) { transform: rotate(5deg); }
+.sol-card:nth-child(4) { transform: rotate(-3deg); }
+.sol-card:nth-child(5) { transform: rotate(4deg); }
+
+/* 아이콘 */
+.sol-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.sol-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 아이콘 색상 (이미지 없을 때) */
+.ic-cc {
+  background: linear-gradient(135deg, #da0f0f, #ff6b6b);
+}
+.ic-lr {
+  background: linear-gradient(135deg, #1c3fce, #5577ff);
+}
+.ic-lrc {
+  background: linear-gradient(135deg, #2196c4, #5bc8f5);
+}
+.ic-ps {
+  background: linear-gradient(135deg, #0d7fc1, #31aff5);
+}
+.ic-st {
+  background: linear-gradient(135deg, #c62535, #e8526a);
+}
+
+/* 화살표 */
+.sol-arrow {
+  padding-top: 6px;
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* content1- 버튼 리스트 */
+.content1-butList {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+
+.content1-button {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  padding: 12px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--sub-color-2);
+  border-radius: 28px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-size: var(--p-c1920px---menu);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.content1-button img {
+  width: 26px;
+  height: 26px;
+  aspect-ratio: 1/1;
+}

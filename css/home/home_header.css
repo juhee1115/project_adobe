@@ -1,0 +1,169 @@
+.header {
+  width: 100%;
+}
+/* 로고  */
+.logo img {
+  width: 95px;
+  height: 25px;
+}
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+/* 메뉴 */
+.navi {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.gnb {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.gnb a {
+  color: var(--sub-color-2);
+}
+.submenu {
+  display: none;
+}
+
+/* 로그인, 회원가입 */
+.sign ul {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  border-radius: 50px;
+  background-color: white;
+}
+.button a {
+  display: block;
+  padding: 10px 30px;
+}
+
+.sign {
+  margin-left: auto;
+  padding-right: 10px;
+}
+.signup {
+  padding-top: 10px;
+}
+.signup a {
+  color: white;
+}
+
+/* visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.visual video {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.visual-text {
+  width: 90%;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.visual-text p {
+  padding-bottom: 20px;
+  color: white;
+  font-size: 25px;
+}
+.visual-text h1 {
+  color: white;
+  font-size: 70px;
+  padding-bottom: 45px;
+  line-height: 1.1;
+}
+
+.visual-button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 메인 버튼 */
+.visual-btn {
+  padding: 12px 45px;
+  background: #fff;
+  color: #000;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+/* 영상 버튼 */
+.video-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.video-btn img {
+  width: 45px;
+}
+
+.visual-img {
+  display: flex;
+  gap: 10px;
+}
+
+.visual-button a img {
+  width: 45px;
+  height: 45px;
+  margin-right: 6px;
+}
+
+/* 비주얼 하단 - AI, 이미지 */
+.visual-content {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+}
+
+.visual-content ul {
+  list-style: none;
+  text-align: left;
+}
+.visual-content li {
+  padding-top: 10px;
+}
+.visual-content ul li:first-child {
+  font-size: 25px;
+}
+
+.visual-content ul li:nth-child(2),
+.visual-content ul li:nth-child(3) {
+  font-size: 20px;
+}
